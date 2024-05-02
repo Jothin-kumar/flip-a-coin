@@ -37,7 +37,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    translate: -50% -75%;
+    translate: -75% -75%;
     
     font-size: 3em;
     font-weight: bold;
