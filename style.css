@@ -20,6 +20,25 @@ body {
     border: blue 2px solid;
     border-radius: 50%;
     margin: 20px;
+    cursor: pointer;
+}
+.coin-side {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -75%;
+    
+    font-size: 3em;
+    font-weight: bold;
+    color: blue;
+}
+.coin-side-1 {
+    rotate: y 0;
+}
+.coin-side-2 {
+    rotate: y 90deg;
 }
 #coin-msg {
     font-size: small;
