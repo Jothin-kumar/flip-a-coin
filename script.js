@@ -18,7 +18,9 @@ function flipCoin() {
     }
 }
 
+window.flipDisabled = false
 document.getElementById("coin-parent").addEventListener("click", () => {
+    if (window.flipDisabled) return
     if (!document.body.classList.contains("coin-flipped")) {
         document.body.classList.add("coin-flipped")
     }
@@ -29,9 +31,14 @@ document.getElementById("coin-parent").addEventListener("click", () => {
         }
         return c
     }
-    for (let i = 0; i < getRandCount(); i++) {
+    const n = getRandCount()
+    for (let i = 0; i < n; i++) {
         setTimeout(() => {
             flipCoin()
         }, i * 1000)
     }
+    window.flipDisabled = true
+    setTimeout(() => {
+        window.flipDisabled = false
+    }, n * 1000)
 })
