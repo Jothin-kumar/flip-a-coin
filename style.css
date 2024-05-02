@@ -4,22 +4,16 @@ body {
     user-select: none;
 }
 
-#main {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    padding: 25px;
-    border: olive 2px solid;
-    border-radius: 10px;
-}
 body.coin-flipped #main {
     border: none;
 }
 #coin-parent {
     width: 10em;
     height: 10em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .coin-container {
     position: absolute;
@@ -43,8 +37,8 @@ body.coin-flipped .coin-container {
     }
 }
 .coin-side {
-    width: fit-content;
-    height: fit-content;
+    width: max-content;
+    height: max-content;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -75,14 +69,6 @@ body.coin-flipped .coin-container {
 }
 .coin-side-2 {
     animation: side2 .5s forwards;
-}
-#coin-msg {
-    font-size: small;
-    color: gray;
-    text-align: center;
-}
-body.coin-flipped #coin-msg {
-    display: none;
 }
 
 footer {
