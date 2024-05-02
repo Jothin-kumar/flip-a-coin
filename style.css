@@ -70,6 +70,12 @@ body.coin-flipped .coin-container {
 .coin-side-2 {
     animation: side2 .5s forwards;
 }
+.init-coin-side {
+    animation: none !important;
+}
+#coin-tail-container {
+    rotate: y 90deg;
+}
 
 footer {
     position: absolute;

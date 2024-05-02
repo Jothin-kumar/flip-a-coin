@@ -3,6 +3,9 @@ window.side2 = document.getElementById("coin-tail-container")
 
 function flipCoin() {
     [window.side1, window.side2].forEach((side) => {
+        if (side.classList.contains("init-coin-side")) {
+            side.classList.remove("init-coin-side")
+        }
         if (side.classList.contains("coin-side-1")) {
             side.classList.remove("coin-side-1")
             side.classList.add("coin-side-2")
