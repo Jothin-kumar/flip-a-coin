@@ -19,8 +19,17 @@ body {
     height: 10em;
     border: blue 2px solid;
     border-radius: 50%;
+    box-shadow: blue 0 0 10px;
     margin: 20px;
     cursor: pointer;
+}
+@keyframes coin-flip {
+    0% {
+        rotate: y 0deg;
+    }
+    100% {
+        rotate: y 180deg;
+    }
 }
 .coin-side {
     width: fit-content;
@@ -34,11 +43,30 @@ body {
     font-weight: bold;
     color: blue;
 }
+body.coin-flip .coin-side {
+    translate: -50% -50%;
+}
+@keyframes side1 {
+    0%, 50% {
+        rotate: y 90deg;
+    }
+    100% {
+        rotate: y 180deg;
+    }
+}
+@keyframes side2 {
+    0% {
+        rotate: y 0deg;
+    }
+    100% {
+        rotate: y 90deg;
+    }
+}
 .coin-side-1 {
-    rotate: y 0;
+    animation: side1 2s forwards;
 }
 .coin-side-2 {
-    rotate: y 90deg;
+    animation: side2 1s forwards;
 }
 #coin-msg {
     font-size: small;
