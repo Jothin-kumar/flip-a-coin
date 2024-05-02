@@ -13,14 +13,25 @@ function flipCoin() {
             side.classList.add("coin-side-1")
         }
     })
-    coinContainer.style.animation = "coin-flip 2s forwards"
+    coinContainer.style.animation = "coin-flip 1s forwards"
     document.body.classList.add("coin-flip")
-    setTimeout(() => {
-        coinContainer.style.animation = ""
+    document.body.onanimationend = () => {
         document.body.classList.remove("coin-flip")
-    }, 2000)
+        coinContainer.style.animation = ""
+    }
 }
 
 document.getElementById("coin-container").addEventListener("click", () => {
-    flipCoin()
+    function getRandCount() {
+        var c = 0
+        while (c == 0) {
+            c = Math.round(Math.random()*10)
+        }
+        return c
+    }
+    for (let i = 0; i < getRandCount(); i++) {
+        setTimeout(() => {
+            flipCoin()
+        }, i * 1000)
+    }
 })

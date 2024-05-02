@@ -63,10 +63,10 @@ body.coin-flip .coin-side {
     }
 }
 .coin-side-1 {
-    animation: side1 2s forwards;
+    animation: side1 1s forwards;
 }
 .coin-side-2 {
-    animation: side2 1s forwards;
+    animation: side2 .5s forwards;
 }
 #coin-msg {
     font-size: small;
