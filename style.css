@@ -51,17 +51,21 @@ body.coin-flipped .coin-container {
 @keyframes side1 {
     0%, 50% {
         rotate: y 90deg;
+        transform: translateZ(-3em);
     }
     100% {
         rotate: y 180deg;
+        transform: translateZ(3em);
     }
 }
 @keyframes side2 {
     0% {
         rotate: y 0deg;
+        transform: translateZ(-3em);
     }
     100% {
         rotate: y 90deg;
+        transform: translateZ(3em);
     }
 }
 .coin-side-1 {
