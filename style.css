@@ -14,6 +14,9 @@ body {
     border: olive 2px solid;
     border-radius: 10px;
 }
+body.coin-flipped #main {
+    border: none;
+}
 #coin-container {
     width: 10em;
     height: 10em;
@@ -22,6 +25,9 @@ body {
     box-shadow: blue 0 0 10px;
     margin: 20px;
     cursor: pointer;
+}
+body.coin-flipped #coin-container {
+    scale: 1.5;
 }
 @keyframes coin-flip {
     0% {
@@ -42,6 +48,9 @@ body {
     font-size: 3em;
     font-weight: bold;
     color: blue;
+}
+body.coin-flipped .coin-side {
+    translate: -50% -50%;
 }
 body.coin-flip .coin-side {
     translate: -50% -50%;
@@ -72,6 +81,9 @@ body.coin-flip .coin-side {
     font-size: small;
     color: gray;
     text-align: center;
+}
+body.coin-flipped #coin-msg {
+    display: none;
 }
 
 footer {

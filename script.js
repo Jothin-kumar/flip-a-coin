@@ -22,6 +22,9 @@ function flipCoin() {
 }
 
 document.getElementById("coin-container").addEventListener("click", () => {
+    if (!document.body.classList.contains("coin-flipped")) {
+        document.body.classList.add("coin-flipped")
+    }
     function getRandCount() {
         var c = 0
         while (c == 0) {
