@@ -17,7 +17,12 @@ body {
 body.coin-flipped #main {
     border: none;
 }
-#coin-container {
+#coin-parent {
+    width: 10em;
+    height: 10em;
+}
+.coin-container {
+    position: absolute;
     width: 10em;
     height: 10em;
     border: blue 2px solid;
@@ -26,7 +31,7 @@ body.coin-flipped #main {
     margin: 20px;
     cursor: pointer;
 }
-body.coin-flipped #coin-container {
+body.coin-flipped .coin-container {
     scale: 1.5;
 }
 @keyframes coin-flip {
@@ -43,17 +48,11 @@ body.coin-flipped #coin-container {
     position: absolute;
     left: 50%;
     top: 50%;
-    translate: -75% -75%;
+    translate: -50% -50%;
     
     font-size: 3em;
     font-weight: bold;
     color: blue;
-}
-body.coin-flipped .coin-side {
-    translate: -50% -50%;
-}
-body.coin-flip .coin-side {
-    translate: -50% -50%;
 }
 @keyframes side1 {
     0%, 50% {
