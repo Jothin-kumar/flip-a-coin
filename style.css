@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+    color: white;
+    user-select: none;
+}
+
+#main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px;
+    border: olive 2px solid;
+    border-radius: 10px;
+}
+#coin-container {
+    width: 10em;
+    height: 10em;
+    border: blue 2px solid;
+    border-radius: 50%;
+    margin: 20px;
+}
+#coin-msg {
+    font-size: small;
+    color: gray;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: x-small;
+}
+footer  a {
+    color: olive;
+}
