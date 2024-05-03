@@ -27,9 +27,13 @@ body.coin-flipped #main {
     margin: 20px;
     cursor: pointer;
 }
+body.coin-flipped .coin-container {
+    cursor: default;
+}
 body.coin-flip-ended .coin-container {
     border: green 2px solid;
     box-shadow: green 0 0 20px;
+    cursor: pointer !important;
 }
 body.coin-flipped .coin-container {
     scale: 1.5;
