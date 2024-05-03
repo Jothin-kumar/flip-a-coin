@@ -30,7 +30,7 @@ document.getElementById("coin-parent").addEventListener("click", () => {
     function getRandCount() {
         var c = 0
         while (c == 0) {
-            c = Math.round(Math.random()*10)
+            c = Math.round(Math.random()*20)
         }
         return c
     }
@@ -38,10 +38,10 @@ document.getElementById("coin-parent").addEventListener("click", () => {
     for (let i = 0; i < n; i++) {
         setTimeout(() => {
             flipCoin()
-        }, i * 1000)
+        }, i * 500)
     }
     window.flipDisabled = true
     setTimeout(() => {
         window.flipDisabled = false
-    }, n * 1000)
+    }, n * 500)
 })

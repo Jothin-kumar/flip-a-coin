@@ -71,10 +71,10 @@ body.coin-flipped .coin-container {
     }
 }
 .coin-side-1 {
-    animation: side1 1s forwards;
+    animation: side1 500ms forwards;
 }
 .coin-side-2 {
-    animation: side2 .5s forwards;
+    animation: side2 250ms forwards;
 }
 .init-coin-side {
     animation: none !important;
