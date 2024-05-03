@@ -30,14 +30,7 @@ document.getElementById("coin-parent").addEventListener("click", () => {
     if (document.body.classList.contains("coin-flip-ended")) {
         document.body.classList.remove("coin-flip-ended")
     }
-    function getRandCount() {
-        var c = 0
-        while (c == 0) {
-            c = Math.round(Math.random()*20)
-        }
-        return c
-    }
-    const n = getRandCount()
+    const n = Math.round(Math.random()*20) + 5
     for (let i = 0; i < n; i++) {
         setTimeout(() => {
             flipCoin()
