@@ -64,21 +64,21 @@ body.coin-flip-ended .coin-side {
 @keyframes side1 {
     0%, 50% {
         rotate: y 90deg;
-        transform: translateZ(-3em);
+        transform: translateY(10px);
     }
     100% {
         rotate: y 180deg;
-        transform: translateZ(3em);
+        transform: translateY(10px);
     }
 }
 @keyframes side2 {
     0% {
         rotate: y 0deg;
-        transform: translateZ(-3em);
+        transform: translateY(-10px);
     }
     100% {
         rotate: y 90deg;
-        transform: translateZ(3em);
+        transform: translateY(10px);
     }
 }
 .coin-side-1 {
