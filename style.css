@@ -23,9 +23,13 @@ body.coin-flipped #main {
     height: 10em;
     border: blue 2px solid;
     border-radius: 50%;
-    box-shadow: blue 0 0 10px;
+    box-shadow: blue 0 0 20px;
     margin: 20px;
     cursor: pointer;
+}
+body.coin-flip-ended .coin-container {
+    border: green 2px solid;
+    box-shadow: green 0 0 20px;
 }
 body.coin-flipped .coin-container {
     scale: 1.5;
@@ -49,6 +53,9 @@ body.coin-flipped .coin-container {
     font-size: 3em;
     font-weight: bold;
     color: blue;
+}
+body.coin-flip-ended .coin-side {
+    color: green;
 }
 @keyframes side1 {
     0%, 50% {
