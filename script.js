@@ -30,15 +30,15 @@ document.getElementById("coin-parent").addEventListener("click", () => {
     if (document.body.classList.contains("coin-flip-ended")) {
         document.body.classList.remove("coin-flip-ended")
     }
-    const n = Math.round(Math.random()*20) + 5
+    const n = Math.floor(Math.round(Math.random()*10)) + 5
     for (let i = 0; i < n; i++) {
         setTimeout(() => {
             flipCoin()
-        }, i * 500)
+        }, i * 1000)
     }
     window.flipDisabled = true
     setTimeout(() => {
         window.flipDisabled = false
         document.body.classList.add("coin-flip-ended")
-    }, n * 500)
+    }, n * 1000)
 })
